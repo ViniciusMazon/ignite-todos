@@ -11,7 +11,7 @@ app.use(express.json());
 const users = [];
 
 function checksExistsUserAccount(request, response, next) {
-  const { username } = request.header;
+  const { username } = request.headers;
   const user = users.find((user) => user.username === username);
   if (!user) {
     return response.status(400).json({ error: 'User does not exist' });
@@ -47,7 +47,7 @@ app.get('/todos', checksExistsUserAccount, (request, response) => {
 });
 
 app.post('/todos', checksExistsUserAccount, (request, response) => {
-  // Complete aqui
+  
 });
 
 app.put('/todos/:id', checksExistsUserAccount, (request, response) => {

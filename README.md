@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img alt="move it logo" title="MoveIt" src="documentation\Readme\logo.png" width="20%">
+</h1>
+
 # Sobre o desafio
 Primeiro desafio proposto no bootcamp Ignite da [Rocketseat](https://github.com/rocketseat-education)💜.
 <br />
